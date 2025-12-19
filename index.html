@@ -34,8 +34,100 @@
     </header>
 
     <main>
-        <section id="home" class="hero"></section>
-        <section id="features" class="features"></section>
+        <!-- Главный экран -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">Dungeon Reckoning</h1>
+            <h2 class="hero-subtitle">Выживи в бесконечном подземелье</h2>
+            <p class="hero-description">
+                Окунитесь в мир жестокого рогалика, где каждая смерть — это новое начало. 
+                Исследуйте процедурно генерируемые подземелья, сражайтесь с древними чудовищами 
+                и собирайте легендарные артефакты в этой захватывающей игре.
+            </p>
+            <div class="hero-buttons">
+                <a href="#download" class="btn-primary">Играть бесплатно</a>
+                <a href="#features" class="btn-secondary">Узнать больше</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">Уникальных врагов</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Легендарных предметов</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Комбинаций прохождения</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+    <div class="pixel-art-container">
+        <div class="pixel-art">
+            <div class="pixel-dungeon">
+                <div class="pixel-hero"></div>
+                <div class="pixel-enemy"></div>
+                <div class="pixel-chest"></div>
+                <div class="pixel-door"></div>
+            </div>
+        </div>
+        <p class="pixel-art-label">Стилизованная графика в духе классических рогаликов</p>
+    </div>
+</div>
+</section>
+
+<!-- Особенности игры -->
+<section id="features" class="features">
+    <div class="container">
+        <h2 class="section-title">Особенности игры</h2>
+        <p class="section-subtitle">Что делает Dungeon Reckoning уникальной?</p>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-random"></i>
+                </div>
+                <h3 class="feature-title">Процедурная генерация</h3>
+                <p class="feature-description">
+                    Каждое подземелье уникально! Ни один забег не будет похож на предыдущий.
+                </p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-skull-crossbones"></i>
+                </div>
+                <h3 class="feature-title">Перманентная смерть</h3>
+                <p class="feature-description">
+                    Смерть - это конец, но каждый забег приносит опыт и новые открытия.
+                </p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <h3 class="feature-title">Система артефактов</h3>
+                <p class="feature-description">
+                    Собирайте и комбинируйте сотни уникальных предметов, меняющих геймплей.
+                </p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3 class="feature-title">Сложные боссы</h3>
+                <p class="feature-description">
+                    Испытайте свои навыки против могущественных боссов с уникальными атаками и механиками.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
         <section id="gallery" class="gallery"></section>
         <section id="requirements" class="requirements"></section>
         <section id="reviews" class="reviews"></section>
@@ -44,6 +136,6 @@
 
     <footer class="footer"></footer>
 
-    <script src="script.js"></script>
+    <script src="scripts.js" defer></script>
 </body>
 </html>
