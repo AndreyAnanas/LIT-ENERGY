@@ -1,0 +1,250 @@
+/* Стили для секции загрузки */
+.download {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #1a1a2e 0%, #0a0a14 100%);
+    text-align: center;
+}
+
+.download-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.download-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    min-width: 200px;
+    border: 2px solid transparent;
+}
+
+.download-btn i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.download-btn.steam {
+    background-color: #171a21;
+    color: #fff;
+    border-color: #66c0f4;
+}
+
+.download-btn.steam:hover {
+    background-color: #66c0f4;
+    color: #171a21;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(102, 192, 244, 0.3);
+}
+
+.download-btn.epic {
+    background-color: #2a2a2a;
+    color: #fff;
+    border-color: #000000;
+}
+
+.download-btn.epic:hover {
+    background-color: #000000;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(151, 151, 151, 0.3);
+}
+
+.download-btn.direct {
+    background-color: #ff4754;
+    color: #fff;
+}
+
+.download-btn.direct:hover {
+    background-color: #ff2e3d;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 71, 84, 0.3);
+}
+
+.download-features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.download-feature {
+    display: flex;
+    align-items: center;
+    color: #b0b0c0;
+}
+
+.download-feature i {
+    color: #4cd964;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.download-note {
+    color: #b0b0c0;
+    font-style: italic;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+/* Стили для футера */
+.footer {
+    background-color: #05050a;
+    padding: 70px 0 20px;
+    border-top: 1px solid #2a2a3a;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.footer-section h3 {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.footer-description {
+    color: #b0b0c0;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #2a2a3a;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #ff4754;
+    transform: translateY(-3px);
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #b0b0c0;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ff4754;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: 1px solid #2a2a3a;
+    background-color: #1a1a2e;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.newsletter-form input:focus {
+    outline: none;
+    border-color: #ff4754;
+}
+
+.newsletter-form button {
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff4754;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #ff2e3d;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #2a2a3a;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Дополнительные медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .download-btn {
+        min-width: 100%;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .download-options {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,115 @@
+.requirements {
+    padding: 100px 0;
+    background-color: #0f0f1a;
+}
+
+.requirements-table {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.requirements-column {
+    background-color: #1a1a2e;
+    border-radius: 10px;
+    padding: 30px;
+    flex: 1;
+    min-width: 300px;
+    border: 1px solid #2a2a3a;
+}
+
+.requirements-column.recommended {
+    border-color: #ff4754;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 71, 84, 0.2);
+}
+
+.requirements-column h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.requirements-column ul {
+    list-style: none;
+}
+
+.requirements-column li {
+    margin-bottom: 15px;
+    color: #b0b0c0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.requirements-column li i {
+    color: #ff4754;
+    margin-right: 10px;
+    width: 20px;
+    margin-top: 3px;
+}
+
+/* Стили для отзывов */
+.reviews {
+    padding: 100px 0;
+    background-color: #0a0a14;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.review-card {
+    background-color: #1a1a2e;
+    border-radius: 10px;
+    padding: 30px;
+    border: 1px solid #2a2a3a;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 71, 84, 0.1);
+    border-color: #ff4754;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.review-avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #2a2a3a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: #ff4754;
+    font-size: 1.5rem;
+}
+
+.review-info h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.review-rating {
+    color: #ffd700;
+}
+
+.review-text {
+    color: #b0b0c0;
+    font-style: italic;
+    line-height: 1.6;
+}
+.section-subtitle span{
+    font-size: 0.8rem;
+}
