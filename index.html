@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚔️</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚔️</text></svg>">
     <title>Dungeon Reckoning - Рогалик-приключение</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="download.css">
@@ -41,36 +43,43 @@
     <main>
         <!-- Главный экран -->
 <section id="home" class="hero">
+    <div class="hero-gif-bg">
+        <img src="/KEKU1080.GIF" alt="Анимированный фон Dungeon Reckoning">
+        <div class="gif-overlay"></div>
+    </div>
+    
     <div class="container">
         <div class="hero-content">
-            <h1 class="hero-title">Dungeon Reckoning</h1>
-            <h2 class="hero-subtitle">Выживи в бесконечном подземелье</h2>
-            <p class="hero-description">
-                Окунитесь в мир жестокого рогалика, где каждая смерть — это новое начало. 
-                Исследуйте процедурно генерируемые подземелья, сражайтесь с древними чудовищами 
-                и собирайте легендарные артефакты в этой захватывающей игре.
-            </p>
-            <div class="hero-buttons">
-                <a href="#download" class="btn-primary">Играть бесплатно</a>
-                <a href="#features" class="btn-secondary">Узнать больше</a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">100+</span>
-                    <span class="stat-label">Уникальных врагов</span>
+            <div class="hero-text-wrapper">
+                <h1 class="hero-title">Dungeon Reckoning</h1>
+                <h2 class="hero-subtitle">Выживи в бесконечном подземелье</h2>
+                <p class="hero-description">
+                    Окунитесь в мир жестокого рогалика, где каждая смерть — это новое начало. 
+                    Исследуйте процедурно генерируемые подземелья, сражайтесь с древними чудовищами, 
+                    побеждайте эпических боссов и собирайте легендарные артефакты в этой захватывающей игре.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn-primary">Играть бесплатно</a>
+                    <a href="#features" class="btn-secondary">Узнать больше</a>
                 </div>
-                <div class="stat">
-                    <span class="stat-number">50+</span>
-                    <span class="stat-label">Легендарных предметов</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">∞</span>
-                    <span class="stat-label">Комбинаций прохождения</span>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Уникальных врагов</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Эпических боссов</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Легендарных предметов</span>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="hero-image">
-    <div class="pixel-art-container">
+    <!-- <div class="pixel-art-container">
         <div class="pixel-art">
             <div class="pixel-dungeon">
                 <div class="pixel-hero"></div>
@@ -80,7 +89,7 @@
             </div>
         </div>
         <p class="pixel-art-label">Стилизованная графика в духе классических рогаликов</p>
-    </div>
+    </div> -->
 </div>
 </section>
 
@@ -397,5 +406,8 @@
     <footer class="footer"></footer>
 
     <script src="scripts.js" defer></script>
+    <button id="backToTop" class="back-to-top" aria-label="Вернуться наверх">
+    <i class="fas fa-chevron-up"></i>
+    </button>
 </body>
 </html>

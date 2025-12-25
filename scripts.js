@@ -187,3 +187,47 @@ setTimeout(() => {
     checkVisibility();
     checkStatsVisibility();
 }, 100);
+
+// Кнопка "Наверх"
+const backToTopBtn = document.getElementById('backToTop');
+
+if (backToTopBtn) {
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+            backToTopBtn.classList.add('visible');
+        } else {
+            backToTopBtn.classList.remove('visible');
+        }
+    });
+    
+    backToTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+// Оптимизация загрузки гифки
+document.addEventListener('DOMContentLoaded', function() {
+    const gifImg = document.querySelector('.hero-gif-bg img');
+    
+    if (gifImg) {
+        gifImg.classList.add('loading');
+        
+        // Ждем загрузки гифки
+        gifImg.onload = function() {
+            gifImg.classList.remove('loading');
+            gifImg.classList.add('loaded');
+        };
+        
+        // На случай если гифка не загрузится
+        gifImg.onerror = function() {
+            gifImg.classList.remove('loading');
+            console.error('Не удалось загрузить гифку');
+        };
+        
+        // Принудительно запускаем загрузку
+        gifImg.src = gifImg.src;
+    }
+});
